@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Madeeha Taj TS | Software Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #333;
+    --accent: #0066cc;
+  }
+
+  body.dark {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #eaeaea;
+    --accent: #4da6ff;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  h1, h2, h3 {
+    color: var(--text);
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  .card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    background: var(--accent);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  .project-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  footer {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+  }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="top-bar">
+    <h1>Madeeha Taj</h1>
+    <button class="btn" onclick="toggleDark()">Dark Mode</button>
+  </div>
+
+  <p>
+    Software & Tech Intern specializing in Python, Web Development, Data Processing,
+    and Robotic Process Automation (RPA). Experienced in building scalable applications,
+    automating workflows, and working with real-world datasets.
+  </p>
+
+  <a class="btn" href="resume.pdf" download>Download Resume</a>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Libraries</h3>
+        <ul>
+          <li>Pandas</li>
+          <li>NumPy</li>
+          <li>OpenPyXL</li>
+          <li>XlsxWriter</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Databases</h3>
+        <ul>
+          <li>Oracle</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Tools</h3>
+        <ul>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>Jupyter Notebook</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Real‑Time Chat Application</h3>
+      <ul>
+        <li>Designed and developed a real-time web-based chat system</li>
+        <li>Implemented dynamic message handling and user interaction</li>
+        <li>Enhanced knowledge of client‑server architecture</li>
+      </ul>
+      <strong>Technologies:</strong> HTML, CSS, JavaScript, Backend Integration
+    </div>
+
+    <div class="card">
+      <h3>Weather Tracker System</h3>
+      <ul>
+        <li>Built an application to fetch and display real-time weather data</li>
+        <li>Integrated third‑party APIs for accurate forecasting</li>
+        <li>Focused on performance and clean UI design</li>
+      </ul>
+      <strong>Technologies:</strong> Python, APIs, Web Development
+  
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>Python Developer Intern — SkillDzire</h3>
+      <ul>
+        <li>Developed Python automation scripts for data processing</li>
+        <li>Worked extensively with Pandas, NumPy, OpenPyXL, XlsxWriter</li>
+        <li>Optimized Excel‑based workflows and database operations</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>RPA Intern — Alshaya</h3>
+      <ul>
+        <li>Currently contributing to Robotic Process Automation initiatives</li>
+        <li>Assisting in automating repetitive business processes</li>
+        <li>Improving operational efficiency through automation logic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <p>
+      yourmail@email.com |
+      <a href="https://linkedin.com/in/madeeha-taj210fm" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/madeehataj10" target="_blank">GitHub</a> |
+      <a href="https://madeehataj10.github.io" target="_blank">Portfolio</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Madeeha Taj
+  </footer>
+
+</div>
+
+<script>
+  function toggleDark() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+</body>
+</html>
